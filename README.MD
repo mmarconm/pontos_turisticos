@@ -6,8 +6,14 @@
 
 # TODO - API
 
-- [X] Implementação da Base da aplicação
-- [ ] Implementaçao da API
+- [X] Criação do ambiente virual
+- [X] Instalação dos pacotes do django e djangorestframework
+- [X] Configuração do vscode
+- [X] 
+- [X] Criação do repositório no github
+- [X] Push da base da aplicação para o repositório github
+- [X] Implementação da Base da aplicação usando django
+- [ ] Implementaçao da API usando djangorestframework
 - [ ] ...
 - [ ] ...
 - [ ] ...
