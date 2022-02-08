@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 from rest_framework import routers
+from rest_framework.authtoken.views import obtain_auth_token
+
 from core.api.viewsets import PontoTuristicoViewSet
 from atracoes.api.viewsets import AtracoesViewSet
 from enderecos.api.viewsets import EnderecoViewSet
@@ -23,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/', include(router.urls)),
+    path('api/auth/', obtain_auth_token)
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
